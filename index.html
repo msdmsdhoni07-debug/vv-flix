@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VV FLIX - Entertainment World</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff1744;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 13px;
+}
+
+.hero {
+    padding: 75px 20px;
+    background: linear-gradient(90deg, #000, #431018);
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #e50914;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 25px 15px;
+}
+
+section h2 {
+    margin-bottom: 18px;
+}
+
+.movies {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+}
+
+.movie {
+    min-width: 135px;
+    background: #1c1c1c;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.movie p {
+    padding: 10px;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VV FLIX</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#movies">Movies</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>VV FLIX</h1>
+    <p>Your Entertainment. Your World.</p>
+    <button onclick="document.getElementById('movies').scrollIntoView()">
+        Explore Movies
+    </button>
+</div>
+
+<section id="movies">
+    <h2>🔥 Trending Now</h2>
+
+    <div class="movies">
+
+        <div class="movie">
+            <img src="https://placehold.co/300x400/222/fff?text=Movie+1">
+            <p>Demo Movie 1</p>
+        </div>
+
+        <div class="movie">
+            <img src="https://placehold.co/300x400/222/fff?text=Movie+2">
+            <p>Demo Movie 2</p>
+        </div>
+
+        <div class="movie">
+            <img src="https://placehold.co/300x400/222/fff?text=Movie+3">
+            <p>Demo Movie 3</p>
+        </div>
+
+        <div class="movie">
+            <img src="https://placehold.co/300x400/222/fff?text=Movie+4">
+            <p>Demo Movie 4</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>🎬 Malayalam Movies</h2>
+    <p>Coming Soon</p>
+</section>
+
+<section>
+    <h2>🍿 Tamil Movies</h2>
+    <p>Coming Soon</p>
+</section>
+
+<footer>
+    © 2026 VV FLIX. All Rights Reserved.
+</footer>
+
+</body>
+</html>
